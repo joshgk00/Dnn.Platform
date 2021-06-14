@@ -539,7 +539,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -669,7 +668,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -792,7 +790,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -937,7 +934,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1035,7 +1031,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1091,7 +1086,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1165,7 +1159,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1298,7 +1291,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1442,7 +1434,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1552,7 +1543,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1693,7 +1683,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1786,7 +1775,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1854,7 +1842,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -1928,7 +1915,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2070,7 +2056,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2211,7 +2196,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2304,7 +2288,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2372,7 +2355,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2446,7 +2428,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2587,7 +2568,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2728,7 +2708,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2821,7 +2800,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2889,7 +2867,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -2963,7 +2940,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>false</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -3068,7 +3044,6 @@
               <header />
               <iconfile />
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -3195,7 +3170,6 @@
               <header />
               <iconfile>~/Icons/Sigma/Files_32X32_Standard.png</iconfile>
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -3287,7 +3261,6 @@
               <header />
               <iconfile>~/Icons/Sigma/Users_32X32_Standard.png</iconfile>
               <inheritviewpermissions>true</inheritviewpermissions>
-              <iswebslice>false</iswebslice>
               <modulepermissions>
                 <permission>
                   <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
