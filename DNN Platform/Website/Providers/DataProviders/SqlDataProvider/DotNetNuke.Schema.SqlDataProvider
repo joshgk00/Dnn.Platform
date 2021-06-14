@@ -56,10 +56,6 @@ CREATE TABLE {databaseOwner}[{objectQualifier}TabModules]
 [DisplayTitle] [bit] NOT NULL CONSTRAINT [DF_{objectQualifier}TabModules_DisplayTitle] DEFAULT ((1)),
 [DisplayPrint] [bit] NOT NULL CONSTRAINT [DF_{objectQualifier}TabModules_DisplayPrint] DEFAULT ((1)),
 [DisplaySyndicate] [bit] NOT NULL CONSTRAINT [DF_{objectQualifier}TabModules_DisplaySyndicate] DEFAULT ((1)),
-[IsWebSlice] [bit] NOT NULL CONSTRAINT [DF_{objectQualifier}abModules_IsWebSlice] DEFAULT ((0)),
-[WebSliceTitle] [nvarchar] (256) NULL,
-[WebSliceExpiryDate] [datetime] NULL,
-[WebSliceTTL] [int] NULL,
 [CreatedByUserID] [int] NULL,
 [CreatedOnDate] [datetime] NULL CONSTRAINT [DF_{objectQualifier}TabModules_CreatedOnDate] DEFAULT (getdate()),
 [LastModifiedByUserID] [int] NULL,
@@ -82,11 +78,11 @@ ALTER TABLE {databaseOwner}[{objectQualifier}TabModules] ADD CONSTRAINT [PK_{obj
 GO
 PRINT N'Creating index [IX_{objectQualifier}TabModules_ModuleID] on {databaseOwner}[{objectQualifier}TabModules]'
 GO
-CREATE NONCLUSTERED INDEX [IX_{objectQualifier}TabModules_ModuleID] ON {databaseOwner}[{objectQualifier}TabModules] ([ModuleID], [TabID]) INCLUDE ([Alignment], [Border], [CacheMethod], [CacheTime], [Color], [ContainerSrc], [CultureCode], [DefaultLanguageGuid], [DisplayPrint], [DisplaySyndicate], [DisplayTitle], [Footer], [Header], [IconFile], [IsDeleted], [IsWebSlice], [LocalizedVersionGuid], [ModuleOrder], [ModuleTitle], [PaneName], [TabModuleID], [UniqueId], [VersionGuid], [Visibility], [WebSliceExpiryDate], [WebSliceTitle], [WebSliceTTL])
+CREATE NONCLUSTERED INDEX [IX_{objectQualifier}TabModules_ModuleID] ON {databaseOwner}[{objectQualifier}TabModules] ([ModuleID], [TabID]) INCLUDE ([Alignment], [Border], [CacheMethod], [CacheTime], [Color], [ContainerSrc], [CultureCode], [DefaultLanguageGuid], [DisplayPrint], [DisplaySyndicate], [DisplayTitle], [Footer], [Header], [IconFile], [IsDeleted], [LocalizedVersionGuid], [ModuleOrder], [ModuleTitle], [PaneName], [TabModuleID], [UniqueId], [VersionGuid], [Visibility], [WebSliceExpiryDate], [WebSliceTitle], [WebSliceTTL])
 GO
 PRINT N'Creating index [IX_{objectQualifier}TabModules_ModuleOrder] on {databaseOwner}[{objectQualifier}TabModules]'
 GO
-CREATE NONCLUSTERED INDEX [IX_{objectQualifier}TabModules_ModuleOrder] ON {databaseOwner}[{objectQualifier}TabModules] ([TabID], [PaneName], [ModuleOrder]) INCLUDE ([Alignment], [Border], [CacheMethod], [CacheTime], [Color], [ContainerSrc], [CreatedByUserID], [CreatedOnDate], [CultureCode], [DefaultLanguageGuid], [DisplayPrint], [DisplaySyndicate], [DisplayTitle], [Footer], [Header], [IconFile], [IsDeleted], [IsWebSlice], [LastModifiedByUserID], [LastModifiedOnDate], [LocalizedVersionGuid], [ModuleID], [ModuleTitle], [TabModuleID], [UniqueId], [VersionGuid], [Visibility], [WebSliceExpiryDate], [WebSliceTitle], [WebSliceTTL])
+CREATE NONCLUSTERED INDEX [IX_{objectQualifier}TabModules_ModuleOrder] ON {databaseOwner}[{objectQualifier}TabModules] ([TabID], [PaneName], [ModuleOrder]) INCLUDE ([Alignment], [Border], [CacheMethod], [CacheTime], [Color], [ContainerSrc], [CreatedByUserID], [CreatedOnDate], [CultureCode], [DefaultLanguageGuid], [DisplayPrint], [DisplaySyndicate], [DisplayTitle], [Footer], [Header], [IconFile], [IsDeleted], [LastModifiedByUserID], [LastModifiedOnDate], [LocalizedVersionGuid], [ModuleID], [ModuleTitle], [TabModuleID], [UniqueId], [VersionGuid], [Visibility], [WebSliceExpiryDate], [WebSliceTitle], [WebSliceTTL])
 GO
 PRINT N'Creating index [IX_{objectQualifier}TabModules_TabID] on {databaseOwner}[{objectQualifier}TabModules]'
 GO
@@ -2441,10 +2437,6 @@ AS
         TM.DisplayTitle,
         TM.DisplayPrint,
         TM.DisplaySyndicate,
-        TM.IsWebSlice,
-        TM.WebSliceTitle,
-        TM.WebSliceExpiryDate,
-        TM.WebSliceTTL,
         M.InheritViewPermissions,
         M.IsShareable,
         M.IsShareableViewOnly,
@@ -5576,10 +5568,6 @@ AS
         TM.DisplayTitle,
         TM.DisplayPrint,
         TM.DisplaySyndicate,
-        TM.IsWebSlice,
-        TM.WebSliceTitle,
-        TM.WebSliceExpiryDate,
-        TM.WebSliceTTL,
         M.InheritViewPermissions,
         M.IsShareable,
         M.IsShareableViewOnly,
@@ -11519,10 +11507,6 @@ CREATE PROCEDURE {databaseOwner}[{objectQualifier}UpdateTabModule]
     @DisplayTitle			bit,
     @DisplayPrint			bit,
     @DisplaySyndicate		bit,
-    @IsWebSlice				bit,
-    @WebSliceTitle			nvarchar(256),
-    @WebSliceExpiryDate		datetime,
-    @WebSliceTTL			int,
     @VersionGuid			uniqueidentifier,
     @DefaultLanguageGuid	uniqueidentifier,
     @LocalizedVersionGuid	uniqueidentifier,
@@ -11550,10 +11534,6 @@ AS
             DisplayTitle = @DisplayTitle,
             DisplayPrint = @DisplayPrint,
             DisplaySyndicate = @DisplaySyndicate,
-            IsWebSlice = @IsWebSlice,
-            WebSliceTitle = @WebSliceTitle,
-            WebSliceExpiryDate = @WebSliceExpiryDate,
-            WebSliceTTL = @WebSliceTTL,
             VersionGuid = @VersionGuid,
             DefaultLanguageGuid = @DefaultLanguageGuid,
             LocalizedVersionGuid = @LocalizedVersionGuid,
@@ -14729,10 +14709,6 @@ CREATE PROCEDURE {databaseOwner}[{objectQualifier}AddTabModule]
     @DisplayTitle           bit,
     @DisplayPrint           bit,
     @DisplaySyndicate       bit,
-    @IsWebSlice				bit,
-    @WebSliceTitle			nvarchar(256),
-    @WebSliceExpiryDate     datetime,
-    @WebSliceTTL			int,
     @UniqueId				uniqueidentifier,
     @VersionGuid			uniqueidentifier,
     @DefaultLanguageGuid	uniqueidentifier,
@@ -14760,10 +14736,6 @@ AS
         DisplayTitle,
         DisplayPrint,
         DisplaySyndicate,
-        IsWebSlice,
-        WebSliceTitle,
-        WebSliceExpiryDate,
-        WebSliceTTL,
         UniqueId,
         VersionGuid,
         DefaultLanguageGuid,
@@ -14793,10 +14765,6 @@ AS
         @DisplayTitle,
         @DisplayPrint,
         @DisplaySyndicate,
-        @IsWebSlice,
-        @WebSliceTitle,
-        @WebSliceExpiryDate,
-        @WebSliceTTL,
         @UniqueId,
         @VersionGuid,
         @DefaultLanguageGuid,
